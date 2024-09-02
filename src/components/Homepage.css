@@ -1,0 +1,130 @@
+/* src/components/Homepage.css */
+
+
+.homepage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('bgimage.png'); /* Path to your background image */
+    background-size: 500px 300px; /* Set specific width and height for the background image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-attachment: fixed; /* Keep the background fixed during scroll */
+    background-position: center; /* Center the background image */
+}
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #282c34;
+    color: #fff;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.hero {
+    background: transparent; /* Fully transparent background */
+    color: #121111; /* Text color */
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.service-icon {
+    font-size: 2rem;
+}
+
+.how-it-works {
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.featured-maids {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.maid-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.maid-item {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.maid-profile {
+    font-size: 3rem;
+}
+
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer {
+    background-color: #282c34;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-media .social-icon {
+    margin: 0 0.5rem;
+    color: #fff;
+    text-decoration: none;
+}

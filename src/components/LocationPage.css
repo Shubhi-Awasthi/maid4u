@@ -1,0 +1,41 @@
+/* src/components/LocationPage.css */
+.location-page {
+    text-align: center;
+    padding: 2rem;
+}
+
+.location-page h1 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.location-page ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.location-page li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    background-color: #f4f4f4; /* Background color */
+    border-radius: 50%; /* Makes the item circular */
+    border: 2px solid #ddd; /* Optional: adds border around circle */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.location-page li:hover {
+    background-color: #e0e0e0; /* Background color on hover */
+    transform: scale(1.1); /* Slightly enlarges the circle on hover */
+}

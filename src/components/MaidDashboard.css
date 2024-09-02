@@ -1,0 +1,154 @@
+/* src/components/MaidDashboard.css */
+
+.maid-dashboard {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+.maid-details {
+    background-color: #f4f7f6;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.maid-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.maid-info p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.booking-requests {
+    padding: 20px;
+}
+
+.booking-requests h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.booking-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.booking-card h3 {
+    margin: 0;
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+.booking-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.accept-button,
+.reject-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.accept-button {
+    background-color: #28a745;
+}
+
+.accept-button:hover {
+    background-color: #218838;
+}
+
+.reject-button {
+    background-color: #dc3545;
+}
+
+.reject-button:hover {
+    background-color: #c82333;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.checkmark-container {
+    margin-bottom: 10px;
+}
+
+.checkmark {
+    width: 50px;
+    height: 50px;
+}
+
+.popup-message {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.toggle-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-button:hover {
+    background-color: #0056b3;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
