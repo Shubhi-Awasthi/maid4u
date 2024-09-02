@@ -3,8 +3,12 @@ import React from 'react';
 import Layout from './Layout';
 import './Homepage.css';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
 
 const Homepage = () => {
+
+    
     return (
         <Layout>
             <section className="hero">

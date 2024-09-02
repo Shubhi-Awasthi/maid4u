@@ -10,6 +10,7 @@ import maid4 from '../Assets/maid.png';
 import maid5 from '../Assets/maid.png';
 import maid6 from '../Assets/maid.png';
 import checkmarkImg from '../Assets/checkmark.jpg';
+import axios from 'axios';
 
 const HomePage = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -31,12 +32,24 @@ const HomePage = () => {
   const [selectedDate, setSelectedDate] = useState('');
   const navigate = useNavigate();
 
+  const url = "http://localhost:8080"
+
+    const getAllMaid = async () => {
+        try {
+            const res = await axios.get(`${url}/user/book-maids`);
+            console.log(res);
+        } catch (error) {
+            console.error("Error fetching maid data", error);
+        }
+    }
+
   useEffect(() => {
     const fetchTimeSlots = async () => {
       const fetchedTimeSlots = ['09:00 AM - 11:00 AM', '11:00 AM - 01:00 PM', '01:00 PM - 03:00 PM', '03:00 PM - 05:00 PM', '05:00 PM - 07:00 PM'];
       setTimeSlots(fetchedTimeSlots);
     };
     fetchTimeSlots();
+    getAllMaid();
   }, []);
 
   useEffect(() => {
